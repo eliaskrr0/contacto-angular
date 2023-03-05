@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  <h1>Lista de contactos</h1>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellidos</th>
+        <th scope="col">Móvil</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let contacto of contactos">
+        <th scope="row">{{contacto.idContacto}}</th>
+        <td>{{contacto.nombre}}</td>
+        <td>{{contacto.apellidos}}</td>
+        <td>{{contacto.numero}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
